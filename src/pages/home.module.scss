@@ -1,1 +1,75 @@
-// TODO
+.wrapper {
+    padding-top: 5rem;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  
+    > a {
+      margin-top: 5rem;
+    }
+  
+    a + a {
+      margin-top: 3rem;
+    }
+  
+    a {
+      display: block;
+  
+      strong {
+        color: var(--heading);
+        font-size: 1.75rem;
+        line-height: 2.12rem;
+        font-weight: 700;
+      }
+  
+      &:hover strong {
+        color: var(--highlight);
+      }
+  
+      p {
+        color: var(--body);
+        font-size: 1.13rem;
+        margin-top: 1rem;
+        line-height: 1.36rem;
+        font-weight: 400;
+      }
+  
+      .postMeta {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        color: var(--info);
+  
+        time {
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+  
+        span {
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+
+    button {
+        color: var(--highlight);
+        background: none;
+        transition: filter 0.2s;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.36125rem;
+        border: none;
+        margin-top: 5rem;
+    
+        &:hover {
+          filter: brightness(0.9);
+        }
+    }
+}
